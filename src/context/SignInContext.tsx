@@ -23,11 +23,6 @@ const SignInProvider = (props: any) => {
     setUsers([...users, user]);
   };
 
-  /*const toggle = (todo: Todo) => {
-    const index = todos.indexOf(todo);
-    todos[index].done = !todo.done;
-    setTodos([...todos]);
-  };*/
 
   return (
     <SignInContext.Provider value={{ users, addUser }}>
