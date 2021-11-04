@@ -5,6 +5,25 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { SignInContextType } from "../context/SignInContextType";
 
+
+/*const regEx = RegExp("(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-_@#$%]).{8,}");
+
+const schema = yup.object().shape({
+  username: yup.string().required("Digite seu usuário"),
+  password: yup
+    .string()
+    .required("campo obrigatório")
+    .matches(
+      regEx,
+      "A senha deve conter mínimo de oito caracteres, pelo menos uma letra, um número e um caractere especial"
+    ),
+});
+
+  confirmPassword: yup
+    .string()
+    .oneOf([yup.ref("password"), null])
+    .required("campo obrigatório"),*/
+
 const schema = yup.object().shape({
   username: yup.string().required("Tarefa inválida"),
   password: yup.string().required("Tarefa inválida"),
