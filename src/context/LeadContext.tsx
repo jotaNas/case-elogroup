@@ -26,11 +26,6 @@ const LeadProvider = (props: any) => {
     setLeads([...leads, lead]);
   };
 
-  /*const toggle = (todo: Todo) => {
-    const index = todos.indexOf(todo);
-    todos[index].done = !todo.done;
-    setTodos([...todos]);
-  };*/
 
   return (
     <LeadContext.Provider value={{ leads, addLead }}>
